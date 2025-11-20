@@ -1,0 +1,89 @@
+{
+  "dayNumber": 2,
+  "title": "Vector Embeddings",
+  "sections": [
+    {
+      "type": "introduction",
+      "content": "# Day 2: Vector Embeddings\n\nIf tokenization is how AI reads text, then vector embeddings are how AI **understands** text. Embeddings transform words and concepts into numbers that capture meaning and relationships.\n\n## What is a Vector Embedding?\n\nA vector embedding is a list of numbers (typically 100-1536 dimensions) that represents the \"meaning\" of a word, sentence, or document. Similar concepts have similar vectors.\n\n```\n\"king\" → [0.2, 0.5, -0.1, 0.8, ...]\n\"queen\" → [0.21, 0.48, -0.09, 0.79, ...]\n\"car\" → [-0.5, 0.1, 0.6, -0.3, ...]\n```\n\nNotice how \"king\" and \"queen\" have similar numbers!\n\n## Why Embeddings Are Magic\n\n### Semantic Similarity\nWords with similar meanings are close together in vector space:\n- \"happy\" is near \"joyful\", \"excited\", \"pleased\"\n- \"car\" is near \"vehicle\", \"automobile\", \"truck\"\n\n### Mathematical Relationships\nFamous example:\n```\nking - man + woman ≈ queen\n```\n\nThis works because embeddings capture relationships!\n\n### Beyond Words\nEmbeddings can represent:\n- Sentences: \"The cat sat on the mat\" → [0.1, 0.3, ...]\n- Documents: Entire articles summarized as vectors\n- Images: Visual concepts as numbers\n- Code: Programming patterns as vectors\n\n## How Embeddings Are Created\n\n1. **Training**: Neural networks learn patterns from massive text datasets\n2. **Context Matters**: The same word in different contexts gets different embeddings\n3. **Dimensionality**: More dimensions = more nuanced understanding (but more compute)\n\n## Real-World Applications\n\n- **Search**: Find similar documents (\"semantic search\")\n- **Recommendations**: \"Users who liked this...\"\n- **RAG Systems**: Retrieve relevant context for AI responses\n- **Clustering**: Group similar items automatically\n- **Anomaly Detection**: Find unusual patterns\n\n## Distance Metrics\n\nTo measure similarity between embeddings:\n- **Cosine Similarity**: Angle between vectors (most common)\n- **Euclidean Distance**: Direct distance between points\n- **Dot Product**: Quick similarity check"
+    },
+    {
+      "type": "interactive-demo",
+      "component": "VectorEmbeddingDemo",
+      "config": {
+        "dimensions": 3,
+        "allowCustomWords": true,
+        "showSimilarity": true,
+        "visualizeRelationships": true
+      }
+    },
+    {
+      "type": "key-insights",
+      "points": [
+        "Embeddings convert text into numerical vectors that capture meaning",
+        "Similar concepts have similar vectors (measured by distance/angle)",
+        "Embeddings enable semantic search, recommendations, and RAG systems",
+        "Modern embeddings are contextual - same word, different meanings in different contexts",
+        "Typical embedding dimensions: 384, 768, 1536 (more = more nuanced)"
+      ]
+    },
+    {
+      "type": "quiz",
+      "questions": [
+        {
+          "question": "What is a vector embedding?",
+          "options": [
+            "A type of database for storing text",
+            "A numerical representation that captures the meaning of text",
+            "A method for compressing large files",
+            "A programming language for AI"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A vector embedding is a list of numbers that represents the meaning of text. Similar meanings produce similar vectors, enabling machines to understand semantic relationships."
+        },
+        {
+          "question": "In vector space, what does it mean when two word embeddings are close together?",
+          "options": [
+            "The words are spelled similarly",
+            "The words appear together frequently in sentences",
+            "The words have similar meanings",
+            "The words have the same number of letters"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When embeddings are close together in vector space, it means the words have similar meanings. This is called semantic similarity and is the foundation of many AI applications."
+        },
+        {
+          "question": "Which metric is most commonly used to measure similarity between embeddings?",
+          "options": [
+            "Alphabetical distance",
+            "Cosine similarity",
+            "Token count difference",
+            "Character overlap"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cosine similarity measures the angle between two vectors and is the most common metric for embedding similarity. It ranges from -1 (opposite) to 1 (identical)."
+        },
+        {
+          "question": "What is a practical application of vector embeddings?",
+          "options": [
+            "Compiling code faster",
+            "Encrypting passwords",
+            "Semantic search and recommendations",
+            "Rendering 3D graphics"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Vector embeddings enable semantic search (finding similar documents by meaning), recommendation systems, RAG systems, and many other AI applications that require understanding meaning."
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "OpenAI Embeddings Guide",
+      "url": "https://platform.openai.com/docs/guides/embeddings"
+    },
+    {
+      "title": "Visualizing Word Embeddings",
+      "url": "https://projector.tensorflow.org/"
+    }
+  ]
+}

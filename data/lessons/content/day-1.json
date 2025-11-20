@@ -1,0 +1,88 @@
+{
+  "dayNumber": 1,
+  "title": "Tokenization",
+  "sections": [
+    {
+      "type": "introduction",
+      "content": "# Welcome to Day 1: Tokenization\n\nTokenization is the foundational process that allows AI models to understand and process text. Think of it as the AI's way of \"reading\" - just as you break sentences into words, AI models break text into tokens.\n\n## What is a Token?\n\nA token is the smallest unit of text that an AI model processes. It could be:\n- A complete word (e.g., \"hello\")\n- Part of a word (e.g., \"un-\", \"break\", \"-able\")\n- A single character or punctuation mark\n- Even whitespace!\n\n## Why Tokenization Matters\n\n1. **Efficiency**: Breaking text into tokens allows models to process text systematically\n2. **Vocabulary Management**: Models work with a fixed vocabulary of tokens (typically 50,000-100,000)\n3. **Understanding Structure**: Tokenization helps models recognize patterns and relationships\n4. **Cost & Limits**: API costs and context limits are measured in tokens\n\n## How It Works\n\nModern AI models like GPT use **Byte Pair Encoding (BPE)** or similar algorithms:\n\n1. Start with individual characters\n2. Find frequently occurring character pairs\n3. Merge them into single tokens\n4. Repeat until reaching desired vocabulary size\n\nExample: \"playing\" → [\"play\", \"ing\"] or [\"play\", \"##ing\"]\n\n## Real-World Impact\n\nUnderstanding tokenization helps you:\n- Write more efficient prompts\n- Predict API costs\n- Work within context limits\n- Debug unexpected AI behavior"
+    },
+    {
+      "type": "interactive-demo",
+      "component": "TokenizationDemo",
+      "config": {
+        "allowCustomText": true,
+        "showTokenCount": true,
+        "highlightTokens": true
+      }
+    },
+    {
+      "type": "key-insights",
+      "points": [
+        "Tokens are the basic units AI models use to process text",
+        "One token ≈ 4 characters or ≈ 0.75 words in English",
+        "Tokenization affects API costs, context limits, and model behavior",
+        "Different languages and special characters may use more tokens",
+        "Understanding tokenization helps you write better prompts"
+      ]
+    },
+    {
+      "type": "quiz",
+      "questions": [
+        {
+          "question": "What is a token in the context of AI language models?",
+          "options": [
+            "A special password to access the AI",
+            "The smallest unit of text the model processes",
+            "A reward given for correct answers",
+            "A type of neural network architecture"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A token is the smallest unit of text that an AI model processes. It can be a word, part of a word, or even punctuation."
+        },
+        {
+          "question": "Approximately how many characters equal one token in English?",
+          "options": [
+            "1 character",
+            "2 characters",
+            "4 characters",
+            "10 characters"
+          ],
+          "correctAnswer": 2,
+          "explanation": "On average, one token equals about 4 characters or 0.75 words in English. This ratio varies by language and context."
+        },
+        {
+          "question": "Why is tokenization important for AI models?",
+          "options": [
+            "It makes the AI run faster on mobile devices",
+            "It determines API costs and helps models process text efficiently",
+            "It prevents the AI from making mistakes",
+            "It translates text into different languages"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tokenization is crucial because it determines how efficiently models process text, affects API costs (charged per token), and helps models work within context limits."
+        },
+        {
+          "question": "Which algorithm is commonly used for tokenization in modern LLMs?",
+          "options": [
+            "ASCII encoding",
+            "Base64 encoding",
+            "Byte Pair Encoding (BPE)",
+            "Huffman coding"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Byte Pair Encoding (BPE) is the most common tokenization algorithm used in modern language models like GPT. It efficiently balances vocabulary size with representation capability."
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "OpenAI Tokenizer Tool",
+      "url": "https://platform.openai.com/tokenizer"
+    },
+    {
+      "title": "Understanding Tokenization in NLP",
+      "url": "https://huggingface.co/docs/transformers/tokenizer_summary"
+    }
+  ]
+}
