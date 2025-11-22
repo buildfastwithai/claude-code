@@ -1,0 +1,166 @@
+{
+  "achievements": [
+    {
+      "id": "first-steps",
+      "title": "First Steps",
+      "description": "Complete your first lesson",
+      "icon": "👣",
+      "rarity": "common",
+      "category": "completion",
+      "requirement": {
+        "type": "completion",
+        "value": 1
+      },
+      "xpReward": 50
+    },
+    {
+      "id": "week-warrior",
+      "title": "Week Warrior",
+      "description": "Maintain a 7-day streak",
+      "icon": "🔥",
+      "rarity": "rare",
+      "category": "streak",
+      "requirement": {
+        "type": "streak",
+        "value": 7
+      },
+      "xpReward": 200
+    },
+    {
+      "id": "halfway-hero",
+      "title": "Halfway Hero",
+      "description": "Complete 15 days of learning",
+      "icon": "⭐",
+      "rarity": "rare",
+      "category": "completion",
+      "requirement": {
+        "type": "completion",
+        "value": 15
+      },
+      "xpReward": 300
+    },
+    {
+      "id": "ai-graduate",
+      "title": "AI Graduate",
+      "description": "Complete all 30 days",
+      "icon": "🎓",
+      "rarity": "legendary",
+      "category": "completion",
+      "requirement": {
+        "type": "completion",
+        "value": 30
+      },
+      "xpReward": 1000
+    },
+    {
+      "id": "perfect-score",
+      "title": "Perfect Score",
+      "description": "Get 100% on any quiz",
+      "icon": "💯",
+      "rarity": "common",
+      "category": "quiz",
+      "requirement": {
+        "type": "quiz_score",
+        "value": 1
+      },
+      "xpReward": 50
+    },
+    {
+      "id": "quiz-master",
+      "title": "Quiz Master",
+      "description": "Get 100% on 10 quizzes",
+      "icon": "🏆",
+      "rarity": "epic",
+      "category": "quiz",
+      "requirement": {
+        "type": "quiz_score",
+        "value": 10
+      },
+      "xpReward": 500
+    },
+    {
+      "id": "speed-learner",
+      "title": "Speed Learner",
+      "description": "Complete a lesson in under 10 minutes",
+      "icon": "⚡",
+      "rarity": "rare",
+      "category": "speed",
+      "requirement": {
+        "type": "speed",
+        "value": 10
+      },
+      "xpReward": 100
+    },
+    {
+      "id": "lightning-fast",
+      "title": "Lightning Fast",
+      "description": "Complete a lesson in under 5 minutes",
+      "icon": "⚡⚡",
+      "rarity": "epic",
+      "category": "speed",
+      "requirement": {
+        "type": "speed",
+        "value": 5
+      },
+      "xpReward": 250
+    },
+    {
+      "id": "night-owl",
+      "title": "Night Owl",
+      "description": "Complete a lesson after 10 PM",
+      "icon": "🦉",
+      "rarity": "rare",
+      "category": "special",
+      "requirement": {
+        "type": "time",
+        "value": 1,
+        "metadata": {
+          "timeRange": { "start": 22, "end": 23 }
+        }
+      },
+      "xpReward": 100
+    },
+    {
+      "id": "early-bird",
+      "title": "Early Bird",
+      "description": "Complete a lesson before 7 AM",
+      "icon": "🐦",
+      "rarity": "rare",
+      "category": "special",
+      "requirement": {
+        "type": "time",
+        "value": 1,
+        "metadata": {
+          "timeRange": { "start": 0, "end": 7 }
+        }
+      },
+      "xpReward": 100
+    },
+    {
+      "id": "marathon-runner",
+      "title": "Marathon Runner",
+      "description": "Maintain a 30-day streak",
+      "icon": "🏃",
+      "rarity": "legendary",
+      "category": "streak",
+      "requirement": {
+        "type": "streak",
+        "value": 30
+      },
+      "xpReward": 1000
+    },
+    {
+      "id": "two-week-streak",
+      "title": "Two Week Champion",
+      "description": "Maintain a 14-day streak",
+      "icon": "💪",
+      "rarity": "epic",
+      "category": "streak",
+      "requirement": {
+        "type": "streak",
+        "value": 14
+      },
+      "xpReward": 400
+    }
+  ]
+}
